@@ -20,5 +20,4 @@ form.addEventListener('submit',function(e){
     getJokes(firstName,lastName);
     first.value = ''
     last.value = ''
-    mainJoke.innerText = '';
 });
