@@ -10,9 +10,7 @@ const mainJoke = document.getElementById('joke-main');
 async function getJokes(firstName, lastName) {
     const response = await axios.get(`http://api.icndb.com/jokes/random`, { params: { firstName, lastName } });
     const joke = response.data.value.joke;
-    console.log(joke)
     mainJoke.innerText = joke;
-    // container.append(mainJoke);
 }
 
 form.addEventListener('submit',function(e){
